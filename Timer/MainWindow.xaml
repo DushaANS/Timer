@@ -1,0 +1,64 @@
+﻿<Window x:Class="Timer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Timer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="400">
+    <Grid x:Name="Windows" Loaded="Windows_Loaded" Background="#FF6B9BB9">
+        <Label Width="60" Height="60" 
+               FontSize="35" 
+               Content="0" 
+               x:Name="TimerTickSecondLabel" 
+               VerticalAlignment="Top" 
+               HorizontalAlignment="Left" 
+               Margin="10,40,0,0" Background="#FFBAD5E4"/>
+        <Label 
+            Width="60" Height="60" 
+            FontSize="35" 
+            Content="0" 
+            x:Name="TimerTickMinuteLabel" 
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Left" Margin="70,40,0,0" Background="#FFBAD5E4"/>
+        <Label 
+            Width="130" Height="60" 
+            FontSize="35" 
+            Content="0" 
+            x:Name="TimerTickHourLabel" 
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Left" Margin="130,40,0,0" Background="#FFBAD5E4"/>
+        <Label 
+            Width="130" Height="60" 
+            FontSize="35" 
+            Content="0" 
+            x:Name="TimerTickDayLabel" 
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Left" Margin="260,40,0,0" Background="#FFBAD5E4"/>
+        <Label Width="60" Height="25" 
+            FontSize="12" 
+            Content="Second:" 
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Left" 
+            Margin="10,15,0,0" Background="#FF6B9BB9"/>
+        <Label Width="60" Height="25" 
+            FontSize="12" 
+            Content="Minute:" 
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Left" 
+            Margin="70,15,0,0" Background="#FF6B9BB9"/>
+        <Label Width="60" Height="25" 
+            FontSize="12" 
+            Content="Hour:" 
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Left" 
+            Margin="130,15,0,0" Background="#FF6897B5"/>
+        <Label Width="60" Height="25" 
+            FontSize="12" 
+            Content="Day:" 
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Left" 
+            Margin="260,15,0,0" Background="#FF6B9BB9"/>
+        <Button Content="Stop" HorizontalAlignment="Center" Margin="0,129,0,0" VerticalAlignment="Top" Width="120" Height="35" Background="#FFBAD5E4" Click="StopClick"/>
+    </Grid>
+</Window>
